@@ -34,10 +34,11 @@ jobs:
     - name: Run Maven Project
       run: mvn verify
     
-    - name: Copy Test Execution Report
-      run: 
-         mkdir public
-         cp /home/runner/work/github-actions-testing/github-actions-testing/target/  public/html-reports
+    - name: Create Directory to Copy Test Execution Report
+      run: mkdir public
+      
+    - name: Copy Html Reports from target directory to public directory   
+      run: cp /home/runner/work/github-actions-testing/github-actions-testing/target/  public/html-reports
          
     - name: Publish Report to Github Page
       uses: peaceiris/actions-gh-pages@v3
