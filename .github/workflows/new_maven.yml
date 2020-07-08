@@ -26,7 +26,7 @@ jobs:
       run: chmod +x src/main/resources/script/install_chrome.sh
     
     - name: Grant Execution Permission For WebDriver
-      run: chmod +x chromedriver
+      run: chmod +x src/main/resources/drivers/win/chromedriver.exe
         
     - name: Clean Maven Project
       run: mvn clean
