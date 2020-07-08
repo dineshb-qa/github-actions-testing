@@ -33,3 +33,14 @@ jobs:
     
     - name: Run Maven Project
       run: mvn verify
+    
+    - name: Copy Test Execution Report
+      run: 
+         mkdir public
+         cp -r github-actions-testing/target/cucumber-html-reports public/html-reports
+         
+    - name: Publish Report to Github Page
+      uses: peaceiris/actions-gh-pages@v3
+      with: 
+        github_token: ${{ secerets.GITHUB_TOKEN }}
+        publish_dir: ./public   
