@@ -13,7 +13,7 @@ jobs:
   cucumber-test:
    name: Run on Chrome
    runs-on: ubuntu-latest
-   container: docker pull selenium/node-chrome:latest  
+   container: selenium/node-chrome:latest  
    steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 1.8
