@@ -40,11 +40,11 @@ jobs:
     - name: Copy Html Reports from target directory to public directory   
       run: cp -r /home/runner/work/github-actions-testing/github-actions-testing/target/  public/html-reports
       
-    - name: Merge Test Report
-      run: npm run combine:report
+#     - name: Merge Test Report
+#       run: npm run combine:report
          
-    - name: Generate HTML Report
-      run: npm run generate:report
+#     - name: Generate HTML Report
+#       run: npm run generate:report
       
     - name: Publish Report to Github Page
       uses: peaceiris/actions-gh-pages@v3
