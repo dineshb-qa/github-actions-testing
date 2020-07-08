@@ -37,7 +37,7 @@ jobs:
     - name: Copy Test Execution Report
       run: 
          mkdir public
-         cp -r github-actions-testing/target/cucumber-html-reports public/html-reports
+         cp /home/runner/work/github-actions-testing/github-actions-testing/target/  public/html-reports
          
     - name: Publish Report to Github Page
       uses: peaceiris/actions-gh-pages@v3
