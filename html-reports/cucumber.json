@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-08T13:01:20.112Z",
+        "start_timestamp": "2020-07-08T13:21:47.870Z",
         "line": 3,
         "name": "Bill Pay",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14702000000,
+              "duration": 13191000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 841000000,
+              "duration": 807000000,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1144000000,
+              "duration": 1203000000,
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +61,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-08T13:01:36.925Z",
+        "start_timestamp": "2020-07-08T13:22:03.186Z",
         "line": 6,
         "name": "Login Successful",
         "description": "",
@@ -71,7 +71,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2262000000,
+              "duration": 3276000000,
               "status": "passed"
             },
             "line": 7,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 671000000,
+              "duration": 601000000,
               "status": "passed"
             },
             "line": 8,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 431000000,
+              "duration": 1962000000,
               "status": "passed"
             },
             "line": 9,
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-07-08T13:01:40.300Z",
+        "start_timestamp": "2020-07-08T13:22:09.034Z",
         "line": 11,
         "name": "Login Unsuccessful",
         "description": "",
@@ -118,7 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1618000000,
+              "duration": 1984000000,
               "status": "passed"
             },
             "line": 12,
@@ -130,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 386000000,
+              "duration": 482000000,
               "status": "passed"
             },
             "line": 13,
@@ -142,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 125000000,
               "status": "passed"
             },
             "line": 14,
@@ -166,7 +166,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-08T13:01:42.442Z",
+        "start_timestamp": "2020-07-08T13:22:11.638Z",
         "line": 10,
         "name": "Login With Test Data",
         "description": "",
@@ -176,7 +176,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1610000000,
+              "duration": 1670000000,
               "status": "passed"
             },
             "line": 4,
@@ -188,7 +188,7 @@
           },
           {
             "result": {
-              "duration": 724000000,
+              "duration": 595000000,
               "status": "passed"
             },
             "line": 5,
@@ -210,7 +210,7 @@
           },
           {
             "result": {
-              "duration": 612000000,
+              "duration": 510000000,
               "status": "passed"
             },
             "line": 6,
@@ -223,7 +223,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-07-08T13:01:45.398Z",
+        "start_timestamp": "2020-07-08T13:22:14.424Z",
         "line": 11,
         "name": "Login With Test Data",
         "description": "",
@@ -233,7 +233,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1947000000,
+              "duration": 1599000000,
               "status": "passed"
             },
             "line": 4,
@@ -245,7 +245,7 @@
           },
           {
             "result": {
-              "duration": 667000000,
+              "duration": 586000000,
               "status": "passed"
             },
             "line": 5,
@@ -267,7 +267,7 @@
           },
           {
             "result": {
-              "duration": 826000000,
+              "duration": 703000000,
               "status": "passed"
             },
             "line": 6,
@@ -280,7 +280,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-07-08T13:01:48.844Z",
+        "start_timestamp": "2020-07-08T13:22:17.322Z",
         "line": 12,
         "name": "Login With Test Data",
         "description": "",
@@ -290,7 +290,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1455000000,
+              "duration": 2210000000,
               "status": "passed"
             },
             "line": 4,
@@ -302,7 +302,7 @@
           },
           {
             "result": {
-              "duration": 532000000,
+              "duration": 591000000,
               "status": "passed"
             },
             "line": 5,
@@ -324,7 +324,7 @@
           },
           {
             "result": {
-              "duration": 697000000,
+              "duration": 451000000,
               "status": "passed"
             },
             "line": 6,
@@ -348,7 +348,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-08T13:01:51.548Z",
+        "start_timestamp": "2020-07-08T13:22:20.583Z",
         "line": 5,
         "name": "Open New Account",
         "description": "",
@@ -358,7 +358,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3265000000,
+              "duration": 2509000000,
               "status": "passed"
             },
             "line": 6,
@@ -370,7 +370,7 @@
           },
           {
             "result": {
-              "duration": 331000000,
+              "duration": 341000000,
               "status": "passed"
             },
             "line": 7,
@@ -382,7 +382,7 @@
           },
           {
             "result": {
-              "duration": 2133000000,
+              "duration": 2125000000,
               "status": "passed"
             },
             "line": 8,
@@ -394,7 +394,7 @@
           },
           {
             "result": {
-              "duration": 686000000,
+              "duration": 720000000,
               "status": "passed"
             },
             "line": 9,
@@ -406,7 +406,7 @@
           },
           {
             "result": {
-              "duration": 1296000000,
+              "duration": 2114000000,
               "status": "passed"
             },
             "line": 10,
@@ -430,7 +430,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-08T13:01:59.266Z",
+        "start_timestamp": "2020-07-08T13:22:28.400Z",
         "line": 5,
         "name": "Register Successful",
         "description": "",
@@ -440,7 +440,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1885000000,
+              "duration": 3426000000,
               "status": "passed"
             },
             "line": 6,
@@ -452,7 +452,7 @@
           },
           {
             "result": {
-              "duration": 976000000,
+              "duration": 886000000,
               "status": "passed"
             },
             "line": 7,
@@ -464,7 +464,7 @@
           },
           {
             "result": {
-              "duration": 927000000,
+              "duration": 10592000000,
               "status": "passed"
             },
             "line": 8,
@@ -476,7 +476,7 @@
           },
           {
             "result": {
-              "duration": 534000000,
+              "duration": 459000000,
               "status": "passed"
             },
             "line": 9,
