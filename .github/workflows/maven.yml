@@ -20,5 +20,14 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    - name: Install Google Chrome
+      run: chmod +x ./scripts/InstallChrome.sh
+        ./scripts/InstallChrome.sh
+    - name: Grant Execution Permission For WebDriver
+      run: chmod +x webdriver
+    - name: Clean Maven Project
+      run: mvn clean
+    - name: Compile Maven Project
+      run: mvn compile
+    - name: Run Maven Project
+      run: mvn verify        
