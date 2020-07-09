@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>tau-cucumber-java-course</td>
+              <td>1</td>
+            <td>09 Jul 2020, 07:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">com.tau.steps.BillPay.i_enter_payee_and_account_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="787000000">0.787</td>
+              <td class="duration" data-value="787000000">0.787</td>
+              <td class="duration" data-value="787000000">0.787</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.BillPay.i_logged_in_as_valid_user_and_navigate_to_bill_pay_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="12423000000">12.423</td>
+              <td class="duration" data-value="12423000000">12.423</td>
+              <td class="duration" data-value="12423000000">12.423</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.BillPay.i_should_be_able_to_send_payment()</td>
+              <td>1</td>
+              <td class="duration" data-value="1272000000">1.272</td>
+              <td class="duration" data-value="1272000000">1.272</td>
+              <td class="duration" data-value="1272000000">1.272</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Login.i_am_on_the_login_page_of_the_Para_bank_application()</td>
+              <td>5</td>
+              <td class="duration" data-value="2078400000">2.078</td>
+              <td class="duration" data-value="2078400000">2.778</td>
+              <td class="duration" data-value="10392000000">10.392</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Login.i_enter_invalid_credentials()</td>
+              <td>1</td>
+              <td class="duration" data-value="430000000">0.430</td>
+              <td class="duration" data-value="430000000">0.430</td>
+              <td class="duration" data-value="430000000">0.430</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Login.i_enter_valid_credentials()</td>
+              <td>1</td>
+              <td class="duration" data-value="655000000">0.655</td>
+              <td class="duration" data-value="655000000">0.655</td>
+              <td class="duration" data-value="655000000">0.655</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Login.i_enter_valid_username_and_password(java.lang.String,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="642333333">0.642</td>
+              <td class="duration" data-value="642333333">0.662</td>
+              <td class="duration" data-value="1927000000">1.927</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Login.i_should_be_taken_to_Overview_page()</td>
+              <td>4</td>
+              <td class="duration" data-value="553750000">0.553</td>
+              <td class="duration" data-value="553750000">0.746</td>
+              <td class="duration" data-value="2215000000">2.215</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Login.i_should_see_proper_error_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="123000000">0.123</td>
+              <td class="duration" data-value="123000000">0.123</td>
+              <td class="duration" data-value="123000000">0.123</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.OpenNewAccount.after_selecting_an_account_number_account_details_should_be_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1366000000">1.366</td>
+              <td class="duration" data-value="1366000000">1.366</td>
+              <td class="duration" data-value="1366000000">1.366</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.OpenNewAccount.i_enter_account_type_and_existing_account_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="2133000000">2.133</td>
+              <td class="duration" data-value="2133000000">2.133</td>
+              <td class="duration" data-value="2133000000">2.133</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.OpenNewAccount.i_logged_in_as_valid_user()</td>
+              <td>1</td>
+              <td class="duration" data-value="1949000000">1.949</td>
+              <td class="duration" data-value="1949000000">1.949</td>
+              <td class="duration" data-value="1949000000">1.949</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.OpenNewAccount.i_navigate_to_open_new_account_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1559000000">1.559</td>
+              <td class="duration" data-value="1559000000">1.559</td>
+              <td class="duration" data-value="1559000000">1.559</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.OpenNewAccount.i_should_be_able_to_open_new_account()</td>
+              <td>1</td>
+              <td class="duration" data-value="732000000">0.732</td>
+              <td class="duration" data-value="732000000">0.732</td>
+              <td class="duration" data-value="732000000">0.732</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Registration.i_Register_to_the_site()</td>
+              <td>1</td>
+              <td class="duration" data-value="10804000000">10.804</td>
+              <td class="duration" data-value="10804000000">10.804</td>
+              <td class="duration" data-value="10804000000">10.804</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Registration.i_am_on_the_registration_page_of_the_Para_bank_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="2894000000">2.894</td>
+              <td class="duration" data-value="2894000000">2.894</td>
+              <td class="duration" data-value="2894000000">2.894</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Registration.i_enter_all_valid_user_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="896000000">0.896</td>
+              <td class="duration" data-value="896000000">0.896</td>
+              <td class="duration" data-value="896000000">0.896</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.tau.steps.Registration.i_should_be_taken_to_Home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="616000000">0.616</td>
+              <td class="duration" data-value="616000000">0.616</td>
+              <td class="duration" data-value="616000000">0.616</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>27</td>
+            <td class="duration">1.969</td>
+            <td class="duration">12.423</td>
+            <td class="duration">53.173</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

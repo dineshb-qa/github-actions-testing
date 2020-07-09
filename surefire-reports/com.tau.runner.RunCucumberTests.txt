@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.tau.runner.RunCucumberTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.069 s - in com.tau.runner.RunCucumberTests
