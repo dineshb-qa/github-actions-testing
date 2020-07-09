@@ -1,7 +1,7 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven
+name: Java + Selenium + Cucumber CI with Maven
 
 on:
   push:
@@ -31,19 +31,7 @@ jobs:
       run: mvn compile
     
     - name: Run Maven Project
-      run: mvn verify
-    
-#     - name: Create Directory to Copy Test Execution Report
-#       run: mkdir public
-      
-#     - name: Copy Html Reports from target directory to public directory   
-#       run: cp -r /home/runner/work/github-actions-testing/github-actions-testing/target/  public/html-reports
-      
-#     - name: Merge Test Report
-#       run: npm run combine:report
-         
-#     - name: Generate HTML Report
-#       run: npm run generate:report
+      run: mvn verify    
       
     - name: Upload the HTML Report as Artifact
       uses: actions/upload-artifact@v2
@@ -55,5 +43,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./target/cucumber-html-reports
-  
+        publish_dir: ./target/cucumber-html-reports 
