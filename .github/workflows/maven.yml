@@ -37,10 +37,10 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: Execution_Report
-        path: ${{ github.workspace }}/target/
+        path: ${{ github.workspace }}/target/cucumber-html-reports
         
     - name: Publish Report to Github Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./target/cucumber-html-reports 
+        publish_dir: ./target/cucumber-html-reports
