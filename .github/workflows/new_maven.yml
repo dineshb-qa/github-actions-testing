@@ -46,8 +46,8 @@ jobs:
 #     - name: Generate HTML Report
 #       run: npm run generate:report
       
-    - name: Publish Report to Github Page
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Upload the HTML Report as Artifact
+      uses: actions/upload-artifact@v2
       with: 
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public   
+        name: Execution_Report
+        path: /home/runner/work/github-actions-testing/github-actions-testing/target/
