@@ -1,7 +1,0 @@
-com\tau\steps\OpenNewAccount.class
-com\tau\steps\Login.class
-com\tau\steps\BillPay.class
-com\tau\base\TestBaseGrid.class
-com\tau\base\TestBase.class
-com\tau\runner\RunCucumberTests.class
-com\tau\steps\Registration.class
